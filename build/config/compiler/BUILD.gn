@@ -634,7 +634,7 @@ if (is_win) {
       "-Wno-unqualified-std-cast-call",
 
       # Needed for nlohmann/json.
-      "-Wno-deprecated-literal-operator",
+      #"-Wno-deprecated-literal-operator",
     ]
   }
 } else {
@@ -671,7 +671,7 @@ if (is_win) {
     "-Wno-psabi",
 
     # Needed for nlohmann/json.
-    "-Wno-deprecated-literal-operator",
+    #"-Wno-deprecated-literal-operator",
   ]
   if (!is_wasm) {
     default_warning_flags += [
